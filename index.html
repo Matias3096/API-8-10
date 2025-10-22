@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick and Morty - Galería de Personajes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Rick and Morty - Galería de Personajes</h1>
+      <p class="subtitle">Consumiendo APIs con JavaScript - Proyecto Práctico</p>
+    </header>
+
+    <div class="controls">
+      <button id="addCharacter">Agregar 1 Personaje Aleatorio</button>
+      <button id="addSix">Agregar 6 Personajes</button>
+      <button id="clearGallery">Limpiar Galería</button>
+    </div>
+
+    <div class="counter">
+      Personajes en galería: <span id="characterCount">0</span> / 15
+    </div>
+
+    <div id="messageContainer" class="message hidden"></div>
+
+    <div id="welcomeMessage" class="welcome">
+      <h2>¡Bienvenido!</h2>
+      <p>Hacé clic en “Agregar Personaje” para comenzar a llenar tu galería</p>
+    </div>
+
+    <div id="gallery" class="gallery"></div>
+    
+    <div id="loadingMessage" class="loading hidden">
+      <p>Cargando personaje...</p>
+    </div>
+    
+    <!-- 🔔 Mensaje de alerta -->
+    <div id="messageContainer" class="message hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
